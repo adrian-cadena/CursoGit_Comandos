@@ -44,11 +44,10 @@ fusionar con la rama principal o cualquier otra, ya que las ramas pueden crearse
     printf("git branch -d <nombre_de_la_rama> -> Elimina la rama especificada\n");
     printf("git branch -> Muestra una lista de todas las ramas locales\n");
 
-/////////////////////////Datos agregados en la rama 1///////////////////////////////////////
-    printf("Estos datos fueron agregados en la rama 1\n");
-    printf("Fin de los commits efectuados en la rama 1\n");
+
+
+
 
     system("pause");
     return 0;
 }
-
