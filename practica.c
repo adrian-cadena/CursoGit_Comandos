@@ -32,6 +32,19 @@ int main()
     que permite versionar nustro programa colocando precisamente etiquetas en donde sabemos que ha terminado
     nuestro programa, la parte del -m es para agregar una descripcion */
     printf("git push --tags -> Sube todas las etiquetas al repositorio remoto\n");
+
+////////////////////////RAMAS EN Git//////////////////////////////////////////////
+/* La rama por defecto en git es la "master" o "main" en esta todos los commit van formando los nodos y la linea
+del tiempo que sera la rama principal, a partir de esta y en cualquier lapso de tiempo, es decir en cualquier nodo
+en el que se haya realizado un commit puede construirse una bifurcacion y cuando ya no sea necesaria destruirla o 
+fusionar con la rama principal o cualquier otra, ya que las ramas pueden crearse a partir incluso de otras ramas*/
+    printf("git branch <nombre_de_la_rama> -> Crea una nueva rama\n");
+    printf("git checkout <nombre_de_la_rama> -> Cambia a la rama especificada\n");
+    printf("git merge <nombre_de_la_rama> -> Fusiona la rama especificada en la rama actual\n");
+    printf("git branch -d <nombre_de_la_rama> -> Elimina la rama especificada\n");
+    printf("git branch -> Muestra una lista de todas las ramas locales\n");
+
+
     system("pause");
     return 0;
 }
