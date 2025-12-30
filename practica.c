@@ -26,8 +26,12 @@ int main()
     // en este caso puede ser que no se realicen los cambios ya que el nombre de la ubicacion de los archivos sea distinto, puede ser "main" o "master"
     //para nustro caso es master por lo que si queremos realizar los cambios debemos escribir master despues de la ruta de origen
     printf("git pull origin main -> Descarga y fusiona los cambios del repositorio remoto a la rama principal local\n");
-    printf("git clone <url_del_repositorio> -> Esto creará una copia local completa del repositorio, incluyendo todo el historial de cambios y todas las ramas.");
+    printf("git clone <url_del_repositorio> -> Esto creará una copia local completa del repositorio, incluyendo todo el historial de cambios y todas las ramas.\n");
 ///////////////////////////////////////////////////////////////////////////////////////
+    printf("git tag <nombre_del_tag> -m -> Crea una etiqueta (tag) en el commit actual\n");/*etiqueta 
+    que permite versionar nustro programa colocando precisamente etiquetas en donde sabemos que ha terminado
+    nuestro programa, la parte del -m es para agregar una descripcion */
+    printf("git push --tags -> Sube todas las etiquetas al repositorio remoto\n");
     system("pause");
     return 0;
 }
