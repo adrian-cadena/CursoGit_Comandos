@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include"misFunciones.h"
 
 int main()
 {
@@ -11,11 +12,13 @@ int main()
     printf("git commit -m \"mensaje\" -> Crea un commit con un mensaje\n");
     printf("git log --oneline -> Muestra el historial de commits en una línea\n");
     printf("git reset --hard <commit_id> -> Restaura el repositorio a un commit específico\n");
-/////////////////////////SEGUNDO VIDEO/////////////////////////////////////////////////////////
+    division();
+    /////////////////////////SEGUNDO VIDEO/////////////////////////////////////////////////////////
 
     printf("git add . -> Agrega todos los archivos modificados al área de preparación\n");
     printf("git commit a -m \"mensaje\" -> Agrega y crea un commit en un solo paso\n");
     printf("git commit --amend -> Modifica el último commit\n");//cuando se instalo VSC se configuro que el editor de texto
+    division();
     //para este tipo de cambios con --amend sea el mismo VSC por lo tanto cuando se ejecuta abrira una nueva ventana de VSC
     //con el mensaje del ultimo commit para editarlo, para guardar los del comando --amend se debe hacer Ctrl+S y para salir de VSC se debe hacer Ctrl+Q
 ////////////////////////TERCER VIDEO//////////////////////////////////////////////
@@ -27,7 +30,8 @@ int main()
     //para nustro caso es master por lo que si queremos realizar los cambios debemos escribir master despues de la ruta de origen
     printf("git pull origin main -> Descarga y fusiona los cambios del repositorio remoto a la rama principal local\n");
     printf("git clone <url_del_repositorio> -> Esto creará una copia local completa del repositorio, incluyendo todo el historial de cambios y todas las ramas.\n");
-///////////////////////////////////////////////////////////////////////////////////////
+    division();
+    ///////////////////////////////////////////////////////////////////////////////////////
     printf("git tag <nombre_del_tag> -m -> Crea una etiqueta (tag) en el commit actual\n");/*etiqueta 
     que permite versionar nustro programa colocando precisamente etiquetas en donde sabemos que ha terminado
     nuestro programa, la parte del -m es para agregar una descripcion */
@@ -43,11 +47,7 @@ fusionar con la rama principal o cualquier otra, ya que las ramas pueden crearse
     printf("git merge <nombre_de_la_rama> -> Fusiona la rama especificada en la rama actual\n");
     printf("git branch -d <nombre_de_la_rama> -> Elimina la rama especificada\n");
     printf("git branch -> Muestra una lista de todas las ramas locales\n");
-
-
-
-
-
+    /////////////////////////////////////////////////////////////////////////////////////////////
     system("pause");
     return 0;
 }
